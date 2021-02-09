@@ -50,5 +50,10 @@ public class Main {
                 .filter(pro -> pro.getArea() < sredniePole.getAverage())
                 .collect(Collectors.toList());
         System.out.println(zadanied);
+        
+        List<Double> mapa = prostokaty.stream()
+                .map(pro -> pro.getArea())
+                .collect(Collectors.toList());
+        System.out.println(mapa);
     }
 }
